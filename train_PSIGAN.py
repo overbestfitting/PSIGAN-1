@@ -126,6 +126,6 @@ for epoch in range(opt.epoch_count, opt.niter + opt.niter_decay + 1):
             visualizer.print_current_errors(epoch, epoch_iter, errors, t)
         
 
-    
+    model.save('latest')
     model.update_learning_rate()
 
